@@ -7,7 +7,7 @@ public class Book {
     private String title;
     private String author;
     private String ISBN;
-    private static ArrayList<Book> bookCollection = new ArrayList<>();
+    private ArrayList<Book> bookCollection = new ArrayList<>();
 
     public Book(String title, String author, String ISBN) {
         this.title = title;
