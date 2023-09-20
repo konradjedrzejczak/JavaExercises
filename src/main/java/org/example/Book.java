@@ -7,7 +7,7 @@ public class Book {
     private String title;
     private String author;
     private String ISBN;
-    private ArrayList<Book> bookCollection = new ArrayList<>();
+    private  ArrayList<Book> bookCollection = new ArrayList<>();
 
     public Book(String title, String author, String ISBN) {
         this.title = title;
@@ -39,15 +39,15 @@ public class Book {
         this.ISBN = ISBN;
     }
 
-    public static void addBook(Book book){
+    public void addBook(Book book){
         bookCollection.add(book);
     }
 
-    public static void removeBook(Book book){
+    public void removeBook(Book book){
         bookCollection.remove(book);
     }
 
-    public static ArrayList <Book> getBookCollection(){
+    public ArrayList <Book> getBookCollection(){
         return bookCollection;
     }
 }
