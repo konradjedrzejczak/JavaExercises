@@ -23,4 +23,13 @@ public class Contact {
     public String toString() {
         return ("Contact" + name + "phone number" + phoneNumber);
     }
+
+    public boolean hasName(String nameToCheck) {
+        return this.name.equalsIgnoreCase(nameToCheck);
+    }
+
+    public boolean hasPhoneNumber(String phoneNumberToCheck) {
+        return this.phoneNumber.equals(phoneNumberToCheck);
+    }
+
 }
